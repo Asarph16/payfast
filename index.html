@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Payment | Grand CapitalFX</title>
+      <link rel="stylesheet" href="style.css">
+   
+      </style>
+   </head>
+   <body>
+    <form name="PayFastPayNowForm" action="https://www.payfast.co.za/eng/process" method="post">
+      <input required type="hidden" name="cmd" value="_paynow">
+      <input required type="hidden" name="receiver" pattern="[0-9]" value="23103831">
+      <input type="hidden" name="return_url" value="https://asarph16.github.io/GrandCapitalf.com/?">
+      <input type="hidden" name="cancel_url" value="https://www.grancapitalfx.com/home">
+      <input type="hidden" name="notify_url" value="https://asarph16.github.io/GrandCapitalf.com/?">
+      <table>
+      <tr>
+      <td><label id="PayFastAmountLabel" for="PayFastAmount">Amount: </label></td>
+      <td><input required id="PayFastAmount" type="number" step=".01" name="amount" min="5.00" placeholder="5.00" value="100"></td>
+      </tr>
+      </table>
+      
+      <input required type="hidden" name="item_name" maxlength="255" value="Grand Capital">
+      <table>
+      <tr>
+      <td colspan=2 align=center>
+      <input type="image" src="https://my.payfast.io/images/buttons/BuyNow/Primary-Large-BuyNow.png" alt="Buy Now" title="Buy Now with Payfast">
+      </td>
+      </tr>
+      </table>
+      </form>
+   </body>
+</html>
